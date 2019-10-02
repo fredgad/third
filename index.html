@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,8 +23,17 @@
             <div class="bar">
             </div>
             <div class="mobile-header-i">
-                <div class="mobile-header-i__icons_cart">
-                    <a href="#">
+                <div class="mobile-header-i__icons_acc">
+                    <span></span>
+                    <div class="accaunt">
+                        <div class="acaunt__item"><a href="#">Мой аккаунт</a></div>
+                        <div class="acaunt__item"><a href="#">Проверить</a></div>
+                        <div class="acaunt__item"><a href="#">Блог</a></div>
+                        <div class="acaunt__item"><a href="#">Войти</a></div>
+                    </div>
+                </div>
+                <div class="mobile-header-i__icons_cart basket-trigger">
+                    <a href="#" >
                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -56,13 +65,19 @@
                     <li class="menu-nav__list_item">
                         <a href="">События</a>
                     </li>
-                    <li class="menu-nav__list_item">
+                    <li class="menu-nav__list_item accaunt-trigger">
                         <a href="">Аккаунт</a>
+                        <div class="accaunt">
+                            <div class="acaunt__item"><a href="#">Мой аккаунт</a></div>
+                            <div class="acaunt__item"><a href="#">Проверить</a></div>
+                            <div class="acaunt__item"><a href="#">Блог</a></div>
+                            <div class="acaunt__item"><a href="#">Войти</a></div>
+                        </div>
                     </li>
                 </ul>
                 <div class="menu-nav__icons">
                     <div class="menu-nav__icons_cart">
-                        <a href="#">
+                        <a href="#" class="basket-trigger">
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                         </a>
                     </div>
@@ -762,7 +777,7 @@
 
             <div class="mooving__menu-nav_icons">
                 <div class="moving__menu-nav_icons_cart">
-                    <p>
+                    <p class="basket-trigger">
                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                     </p>
                 </div>
@@ -790,10 +805,12 @@
         <div class="basket">
             <div class="basket__head">
                 <div class="basket__head_title">Корзина</div>
-                <div class="basket__head_close"></div>
+                <div class="basket__head_close">x</div>
             </div>
             <div class="basket__body">
-                <!-- <div class="basket__body_item">
+
+                <!-- <p>Ваша корзина пока пуста </p> -->
+                <div class="basket__body_item">
                     <div class="basket__body_item_img">
                         <img src="app\images\basket-test.jpg" alt="">
                     </div>
@@ -825,7 +842,7 @@
                             <input type="text">
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
             <div class="basket__footer">
                 <div class="subtotal">
